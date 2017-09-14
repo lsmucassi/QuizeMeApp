@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_question"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mybackground"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.exmplem.android.quizeme2.QuestionActivity">
+
+    <RelativeLayout
+        android:id="@+id/activity_quest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:weightSum="1"
+        tools:context="com.exmplem.android.quizeme2.QuestionActivity">
+
+        <TextView
+            android:id="@+id/question_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="casual"
+            android:text="@string/questions"
+            android:textAllCaps="true"
+            android:textColor="#26A69A"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/question_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/question_header"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="serif-monospace"
+            android:text=" ? "
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/select_cmd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/question_one"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="serif-monospace"
+            android:text="@string/select"
+            android:textAllCaps="true"
+            android:textColor="#26A69A"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/lin_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="150dp">
+
+            <RadioGroup
+                android:id="@+id/rad_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true">
+
+                <RadioButton
+                    android:id="@+id/rad_BtnOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="serif-monospace"
+                    android:onClick="rbnOneClicked"
+                    android:text="ans_one"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rad_BtnTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="serif-monospace"
+                    android:onClick="rbnTwoClicked"
+                    android:text="ans_two"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rad_BtnThr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="serif-monospace"
+                    android:onClick="rbnThreeClicked"
+                    android:text="ans_three"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rad_BtnFr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="serif-monospace"
+                    android:onClick="rbnFourClicked"
+                    android:text="ans_four"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/display_mes"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/question_header"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="0.13"
+            android:background="#80CBC4"
+            android:fontFamily="casual"
+            android:text=" "
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/display_mes">
+
+            <ImageView
+                android:id="@+id/good_scor"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="145dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/thumbsup" />
+
+            <ImageView
+                android:id="@+id/bad_scor"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="145dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/thumbsdown" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/start_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="190dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250dp"
+            android:alpha="0.8"
+            android:src="@drawable/puzzletwo" />
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#26A69A"
+            android:fontFamily="casual"
+            android:onClick="submitButton"
+            android:text="@string/submit"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="#26A69A"
+            android:fontFamily="casual"
+            android:onClick="nextButton"
+            android:text="@string/next"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/go_button"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#26A69A"
+            android:fontFamily="casual"
+            android:onClick="playAgain"
+            android:text="@string/go"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_above="@+id/submit_button"
+            android:layout_alignLeft="@+id/submit_button"
+            android:layout_alignStart="@+id/submit_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="100dp"
+            android:alpha="0.7"
+            android:background="#26A69A"
+            android:fontFamily="casual"
+            android:onClick="startButton"
+            android:text="@string/play"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

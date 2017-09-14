@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">Quiz Me 2</string>
+    <string name="chose_topic">Choose a topic from the topics below</string>
+    <string name="history">History</string>
+    <string name="economy">Economy</string>
+    <string name="science">Science</string>
+    <string name="next">next</string>
+    <string name="start">Start</string>
+    <string name="play">Play</string>
+    <string name="questions">Questions</string>
+    <string name="select">Select Answer</string>
+    <string name="submit">Submit</string>
+    <string name="go">Play Again</string>
+
+    <!-- Topic Headers-->
+    <string name="hist_trivia">HISTORY TRIVIA</string>
+    <string name="econo_trivia">ECONOMY TRIVIA</string>
+    <string name="sci_trivia">SCIENCE TRIVIA</string>
+
+    <!--Questions for history-->
+    <string name="german">Which German Country invented the zeppelin?</string>
+    <string name="usa_pres">Who was the first president of the USA?</string>
+    <string name="sec_pres">Who was the second president of the United States?</string>
+    <string name="viii">How many women did Henry VIII have?</string>
+    <string name="napoleon">What was the name of Napoleons first wife?</string>
+    <string name="city">Which city became capital of West-Germany in 1949?</string>
+    <string name="island">On which island was Napoleon born?</string>
+    <string name="children">How many children did Queen Victoria have?</string>
+    <string name="war">Which war was ended by the signing the armistice on July 27 th, 1953?</string>
+    <string name="titanic">"In which city was the Titanic built?</string>
+    <string name="next_question">next question</string>
+
+    <!-- History answers-->
+    <string name="zep">Zeppelin</string>
+    <string name="george">George Washington</string>
+    <string name="adams">John Adams</string>
+    <string name="josephine">Josephine</string>
+    <string name="belfast">Belfast</string>
+    <string name="bonn">Bonn</string>
+    <string name="six_wom">Six</string>
+    <string name="nine">Nine</string>
+    <string name="corsica">Corsica</string>
+    <string name="korean">The Korean War</string>
+
+    <!-- economics questions-->
+    <string name="italy">What used to be the currency of Italy?</string>
+    //Lirain
+    <string name="pesetas">what country where pesetas was the currency?</string>
+    //Spain
+    <string name="oil">Which country is the largest producer of olive oil?</string>
+    //Spain
+    <string name="office">What is the world’s largest office building?</string>
+    //Pentagon
+    <string name="jse">Which currency is at home on the Johannesburg Stock Exchange?</string>
+    //South African rand
+    <string name="component">What is the main component in glass?</string>
+    //Sand
+    <string name="origin">Which country is the origin of the car brands Daewoo and Kia?</string>
+    //South Korea
+    <string name="ch">Where does a car with the letters CH come from?</string>
+    //Switzerland
+    <string name="lek">What is the national currency of Albania?</string>
+    //Albanese lek
+    <string name="australia">What is the national airline of Australia?</string>
+    //Qantas
+
+    <!-- Economics answers-->
+    <string name="lirian">Lirain</string>
+    <string name="spain_curr">Spain</string>
+    <string name="spain_prod">Spain</string>
+    <string name="pentagon">Pentagon</string>
+    <string name="rand">South African rand</string>
+    <string name="sand">Sand</string>
+    <string name="south_korea">South Korea</string>
+    <string name="switz">Switzerland</string>
+    <string name="alb">Albanese lek</string>
+    <string name="qantas">Qantas</string>
+
+    <!-- science questions-->
+    <string name="spaceship">Who was the first man to fly around the earth with a spaceship?</string>
+    //Gagarin
+    <string name="dinosaur">On which hemisphere were the most dinosaur skeletons found?</string>
+    //The northern hemisphere
+    <string name="color">What colour is cobalt?</string>
+    //Blue
+    <string name="invented">Who invented vulcanized rubber?</string>
+    //Goodyear
+    <string name="affected">What is the organ that is affected when one is suffering from hepatitis?</string>
+    //Liver
+    <string name="device">Which device do we use to look at the stars?</string>
+    //Telescope
+    <string name="intensity">Which unit indicates the light intensity?</string>
+    //Candelas
+    <string name="atomic">Who is the father of the atomic bomb?</string>
+    //Robert Oppenheimer
+    <string name="barometer">Who invented the barometer?</string>
+    //Torricelli
+    <string name="american">Who was the first American in space?</string>
+    //Alan Shepard
+
+    <!-- Science Answers-->
+    <string name="gagarin">Gagarin</string>
+    <string name="hemisphere">The northern hemisphere</string>
+    <string name="blue">Blue</string>
+    <string name="goodyear">Goodyear</string>
+    <string name="liver">Liver</string>
+    <string name="telescope">Telescope</string>
+    <string name="candelas">Candelas</string>
+    <string name="robert">Robert Oppenheimer</string>
+    <string name="torri">Torricelli</string>
+    <string name="alan">Alan Shepard</string>
+
+</resources>

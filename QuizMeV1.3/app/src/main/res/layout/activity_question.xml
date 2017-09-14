@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/quizme">
+
+    <RelativeLayout
+        android:id="@+id/activity_quest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        tools:context="com.exmplem.android.quizmev13.QuestActivity">
+
+        <TextView
+            android:id="@+id/question_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="casual"
+            android:text="@string/questions"
+            android:textAllCaps="true"
+            android:textColor="#E0E0E0"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/question_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/question_header"
+            android:fontFamily="serif-monospace"
+            android:text=" "
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/question_one"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:text="Select Answer" />
+
+        <TextView
+            android:id="@+id/display_mes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.13"
+            android:layout_centerHorizontal="true"
+            android:background="#E0E0E0"
+            android:fontFamily="casual"
+            android:text=" "
+            android:layout_below="@id/spinner2"
+            android:textAllCaps="true"
+            android:textColor="#E0E0E0"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="160dp"
+            android:background="#E0E0E0"
+            android:layout_centerHorizontal="true"
+            android:onClick="startButton"
+            android:fontFamily="casual"
+            android:text="@string/start"
+            android:layout_below="@id/display_mes"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#E0E0E0"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="160dp"
+            android:fontFamily="casual"
+            android:onClick="nextButton"
+            android:text="@string/next"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_below="@+id/display_mes" />
+
+        <Button
+            android:id="@+id/go_button"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="160dp"
+            android:background="#E0E0E0"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="casual"
+            android:text="@string/go"
+            android:layout_below="@id/display_mes"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="5dp"
+            android:background="#E0E0E0"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="casual"
+            android:text="@string/submit"
+            android:onClick="submitRes"
+            android:layout_below="@id/go_button"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</ScrollView>
